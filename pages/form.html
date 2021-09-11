@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lampert Alan</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body style=" background-color: #C1C1C1;">
+        <header>         
+          <a class="titulo" href="/index.html"><h1 >Eterlau</h1></a>   
+            <div class="menu">              
+              <nav>                                    
+                  <ul>                    
+                    <li><a href="/pages/productos.html">Trabajos</a></li>
+                    <li><a href="/pages/ubicacion.html">Ubicación</a></li>                    
+                    <li><a href="/pages/form.html">Contacto</a></li>
+                  </ul>
+              </nav>
+            </div>
+          </header>
+         
+<div class="container">
+    <form onsubmit="enviar(); return false;">
+    <div class="row">
+      <div>
+        <label for="nombre">Nombre completo</label>    
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo"> 
+        <div class="errores" id="enombre"></div>
+      </div>      
+    
+    <div class="row">
+      <div >
+        <label for="email">E-Mail</label>   
+        <input type="email" id="mail" name="mail" placeholder="E-mail"> 
+        <div class="errores" id="ecorreo"></div>             
+    </div>
+    
+    <div class="row">
+      <div >
+        <label for="disp">Disponibilidad</label>    
+        <select id="disp" name="disp">
+          <option value="mañana">Mañana</option>
+          <option value="tarde">Tarde</option>
+          <option value="noche">Noche</option>
+        </select>              
+    </div>
+    
+    <div class="row">
+      <div>
+        <label for="mensaje">Mensaje</label>    
+        <textarea id="mensaje" name="mensaje"style="height:100px"></textarea>
+      </div>
+    
+    <div class="row">
+      <input type="submit" value="Enviar">
+    </div>
+    
+    </form>
+  </div>
+       
+    </body>    
+    
+    <script type='text/javascript' src='/script.js'></script>
+</html>
+    
